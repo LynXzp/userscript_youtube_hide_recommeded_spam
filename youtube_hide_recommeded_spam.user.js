@@ -15,7 +15,9 @@ var timerId = setInterval(
         var elems2 = elems[i].getElementsByClassName('stat view-count');
         for(var j=0; j<elems2.length; j++)
       
-        if( elems2[j].innerHTML.indexOf('Recommended for you') !== -1 )
+        if(( elems2[j].innerHTML.indexOf('Recommended for you') !== -1 )
+          ||
+           ( elems2[j].innerHTML.indexOf('Рекомендуемые вам') !== -1 ))
           elems[i].style.display = 'none'
       }
   },
