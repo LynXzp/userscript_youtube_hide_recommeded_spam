@@ -8,16 +8,16 @@
 
 var timerId = setInterval(
   function() {
-    var elems = document.getElementsByClassName('content-wrapper');
-
-    for(var i=0; i<elems.length; i++)
+    var elems = document.getElementsByClassName('style-scope ytd-watch-next-secondary-results-renderer');
+    for(var i=7; i<elems.length; i++)
       { 
-        var elems2 = elems[i].getElementsByClassName('stat view-count');
+        var elems2 = elems[i].getElementsByClassName('style-scope ytd-video-meta-block');
         for(var j=0; j<elems2.length; j++)
-      
-        if(( elems2[j].innerHTML.indexOf('Recommended for you') !== -1 )
+        
+        //if( elems2[j].innerHTML == 'Recommended for you')
+        if(( elems2[j].innerHTML.indexOf('Recommended for you') == 0 )
           ||
-           ( elems2[j].innerHTML.indexOf('Рекомендуемые вам') !== -1 ))
+           ( elems2[j].innerHTML.indexOf('Рекомендуемые вам') == 0 ))
           elems[i].style.display = 'none'
       }
   },
