@@ -8,17 +8,24 @@
 
 var timerId = setInterval(
   function() {
-    var elems = document.getElementsByClassName('style-scope ytd-watch-next-secondary-results-renderer');
-    for(var i=7; i<elems.length; i++)
+    var RecomBlock = document.getElementsByClassName('style-scope ytd-watch-next-secondary-results-renderer');
+    for(var i=5; i<RecomBlock.length; i++)
       { 
-        var elems2 = elems[i].getElementsByClassName('style-scope ytd-video-meta-block');
-        for(var j=0; j<elems2.length; j++)
-        
-        //if( elems2[j].innerHTML == 'Recommended for you')
-        if(( elems2[j].innerHTML.indexOf('Recommended for you') == 0 )
-          ||
-           ( elems2[j].innerHTML.indexOf('Рекомендуемые вам') == 0 ))
-          elems[i].style.display = 'none'
+
+        var annoying1 = RecomBlock[i].getElementsByClassName('style-scope ytd-video-meta-block');
+        for(var j=0; j<annoying1.length; j++)
+           if(( annoying1[j].innerHTML.indexOf('Recommended for you') == 0 )
+                ||
+                ( annoying1[j].innerHTML.indexOf('Рекомендуемые вам') == 0 ))
+             RecomBlock[i].style.display = 'none'
+          
+        var annoying2 = RecomBlock[i].getElementsByClassName('style-scope ytd-badge-supported-renderer');
+        for(var j=0; j<annoying2.length; j++)
+           if(( annoying2[j].innerHTML.indexOf('New') == 0 )
+                ||
+                ( annoying2[j].innerHTML.indexOf('Новое') == 0 ))
+             RecomBlock[i].style.display = 'none'
+          
       }
   },
 5000);
