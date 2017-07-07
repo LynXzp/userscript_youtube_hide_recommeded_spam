@@ -1,7 +1,7 @@
 # This is userscript for hiding annoying youtube recomendation
-Ussualy half of suggested videos very annoing.
+Ussualy half of suggested videos very annoying.
 Some of the recomendation basing on your watched video, but with accent on paid videos.
-Other is new virus video in "Yellow sensation" style.
+Other is new virus video in "yellow sensation" style.
 Hide it all and watch only releated to current video recommendations.
 
 ![Alt text](/snapshot.png?raw=true "Optional Title")
