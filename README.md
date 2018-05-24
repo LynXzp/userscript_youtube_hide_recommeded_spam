@@ -1,3 +1,6 @@
+# No more reqired, use ublock origin filter, instead of this script:
+##ytd-compact-video-renderer.videoblocker-allowed.use-ellipsis.ytd-watch-next-secondary-results-renderer.style-scope:has-text(Recommended for you)
+
 # This is userscript for hiding annoying youtube recomendation
 Ussualy half of suggested videos very annoying.
 Some of the recomendation basing on your watched video, but with accent on paid videos.
